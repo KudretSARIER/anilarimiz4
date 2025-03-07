@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>❤ Bizim Hikayemiz (Mobil Uyumlu) ❤</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* TEMEL STİLLER */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* AÇILIŞ EKRANI */
+        .opening {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #ffebee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            animation: fadeOut 1s forwards 3s;
+        }
+
+        .opening h1 {
+            font-size: 8vw;
+            color: #d32f2f;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        /* MOBİL ANI SAYFALARI */
+        .memory {
+            width: 100%;
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .memory::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+        }
+
+        .memory-content {
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-align: center;
+            width: 90%;
+            max-width: 600px;
+        }
+
+        /* MOBİL BAŞLIKLAR */
+        .mobile-title {
+            font-size: 9vw;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .memory-date {
+            font-size: 5vw;
+            color: #ffb3ba;
+            margin: 20px 0;
+        }
+
+        .memory-text {
+            font-size: 4.5vw;
+            line-height: 1.5;
+            margin: 20px 0;
+        }
+
+        /* MOBİL NAVİGASYON */
+        .nav-dots {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 12px;
+            z-index: 100;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            background: rgba(255,255,255,0.5);
+            border-radius: 50%;
+            transition: 0.3s;
+        }
+
+        .dot.active {
+            background: #ff5252;
+            transform: scale(1.3);
+        }
+
+        /* TOUCH İÇİN ANİMASYON */
+        .memory {
+            transition: transform 0.3s ease-out;
+        }
+
+        @keyframes fadeOut {
+            to { opacity: 0; visibility: hidden; }
+        }
+
+        /* TABLET & MASAÜSTÜ */
+        @media (min-width: 768px) {
+            .mobile-title { font-size: 3.5rem; }
+            .memory-date { font-size: 1.8rem; }
+            .memory-text { font-size: 1.2rem; }
+            .nav-dots { bottom: 40px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="opening">
+        <h1>BİZİM HİKAYEMİZ💖</h1>
+    </div>
+
+    <div class="memory" style="background-image: url('foto2.jpg.jpg')">
+        <div class="memory-content">
+            <div class="mobile-title">Prens🤴🏻</div>
+            <div class="memory-date"><i class="fas fa-heart"></i> 08.07.2024</div>
+            <div class="memory-text">Her şeyin başladığı o an...</div>
+        </div>
+    </div>
+
+    <div class="memory" style="background-image: url('foto1.jpg')">
+        <div class="memory-content">
+            <div class="mobile-title">Prenses👸🏻</div>
+            <div class="memory-date"><i class="fas fa-heart"></i> 08.07.2023</div>
+            <div class="memory-text">Her şeyin başladığı o an...</div>
+        </div>
+    </div>
+
+    <div class="memory" style="background-image: url('ilk grntulu.jpg')">
+        <div class="memory-content">
+            <div class="mobile-title">Prenses👸🏻</div>
+            <div class="memory-date"><i class="fas fa-sun"></i> 02.10.2024</div>
+            <div class="memory-text">Birlikte ilk gün görüntülü konuşmamız...</div>
+        </div>
+    </div>
+
+    <div class="memory" style="background-image: url('ilk foto1.jpg')">
+        <div class="memory-content">
+            <div class="mobile-title">Prenses👸🏻</div>
+            <div class="memory-date"><i class="fas fa-sun"></i> 20.03.2023</div>
+            <div class="memory-text">Birlikte ilk gün doğumumuz...</div>
+        </div>
+    </div>
+
+    <div class="memory" style="background-image: url('foto1.jpg')">
+        <div class="memory-content">
+            <div class="mobile-title">Prenses👸🏻</div>
+            <div class="memory-date"><i class="fas fa-sun"></i> 20.03.2023</div>
+            <div class="memory-text">Birlikte ilk gün doğumumuz...</div>
+        </div>
+    </div>
+
+    <div class="memory" style="background-image: url('foto1.jpg')">
+        <div class="memory-content">
+            <div class="mobile-title">Prenses👸🏻</div>
+            <div class="memory-date"><i class="fas fa-sun"></i> 20.03.2023</div>
+            <div class="memory-text">Birlikte ilk gün doğumumuz...</div>
+        </div>
+    </div>
+
+    <div class="memory" style="background-image: url('foto1.jpg')">
+        <div class="memory-content">
+            <div class="mobile-title">Prenses👸🏻</div>
+            <div class="memory-date"><i class="fas fa-sun"></i> 20.03.2023</div>
+            <div class="memory-text">Birlikte ilk gün doğumumuz...</div>
+        </div>
+    </div>
+
+    <div class="nav-dots"></div>
+
+    <script>
+        // MOBİL ÖZELLİKLER
+        let touchStartY = 0;
+        let currentMemory = 0;
+        const memories = document.querySelectorAll('.memory');
+        const dots = document.querySelectorAll('.dot');
+        
+        // Touch event listeners
+        document.addEventListener('touchstart', e => {
+            touchStartY = e.touches[0].clientY;
+        });
+
+        document.addEventListener('touchend', e => {
+            const touchEndY = e.changedTouches[0].clientY;
+            const diff = touchStartY - touchEndY;
+
+            if (Math.abs(diff) > 50) {
+                if (diff > 0 && currentMemory < memories.length-1) {
+                    currentMemory++;
+                } else if (diff < 0 && currentMemory > 0) {
+                    currentMemory--;
+                }
+                scrollToMemory(currentMemory);
+            }
+        });
+
+        // Navigasyon noktaları
+        memories.forEach((_, i) => {
+            const dot = document.createElement('div');
+            dot.className = 'dot';
+            dot.addEventListener('click', () => {
+                currentMemory = i;
+                scrollToMemory(i);
+            });
+            document.querySelector('.nav-dots').appendChild(dot);
+        });
+
+        function scrollToMemory(index) {
+            memories[index].scrollIntoView({
+                behavior: 'smooth',
+                block: 'nearest'
+            });
+            document.querySelectorAll('.dot').forEach(dot => dot.classList.remove('active'));
+            document.querySelectorAll('.dot')[index].classList.add('active');
+        }
+
+        // İlk yükleme
+        setTimeout(() => {
+            document.querySelector('.opening').remove();
+            scrollToMemory(0);
+        }, 3000);
+    </script>
+</body>
+</html>
